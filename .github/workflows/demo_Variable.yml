@@ -10,6 +10,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps: |
-      echo Name is $myman
-      echo Second Name is $name
+    steps:
+    - name : Print env and configuration variable
+      run : |
+        echo Name is $myman
+        echo Second Name is $name
