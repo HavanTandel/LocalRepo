@@ -1,5 +1,9 @@
 name: env variable demo
 
+on: 
+  push:
+    branches:
+      - main
 env:
   myman: Github
 
