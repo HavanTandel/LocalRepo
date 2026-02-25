@@ -1,0 +1,10 @@
+name: env variable demo
+
+env:
+  myman: Github
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Name is $myman
