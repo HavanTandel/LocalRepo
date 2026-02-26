@@ -12,8 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Print hello world
-        run: echo Hello My Man
+        run: echo Hello My Man2
         shell: bash
+
 
 
 
