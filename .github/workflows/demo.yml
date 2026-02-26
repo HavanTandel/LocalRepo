@@ -1,11 +1,7 @@
 name: "demo"
 on:
-  push:
-    branches:
-      -main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+    
 jobs:
   build:
     runs-on: self-hosted
@@ -14,6 +10,7 @@ jobs:
       - name: Print hello world
         run: echo Hello My Man2
         shell: bash
+
 
 
 
