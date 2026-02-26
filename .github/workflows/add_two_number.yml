@@ -1,0 +1,22 @@
+name: Add Two Numbers
+
+on: 
+  workflow_dispatch:
+    inputs:
+      a :
+        description: "Enter number a"
+        required: true
+      b :
+        description: "Enter number b"
+        required: true
+
+jobs:
+  add:
+    runs-on:
+      - ubuntu-latest
+    steps:
+      - run: |
+          SUM = $((${{github.event.inputs.a}}+${{github.event.inputs.b}}))
+          echo "Sum of two number is =$SUM"
+      
+        
