@@ -16,7 +16,7 @@ jobs:
       - ubuntu-latest
     steps:
       - run: |
-          SUM = $((${{github.event.inputs.a}}+${{github.event.inputs.b}}))
+          SUM=$((${{github.event.inputs.a}}+${{github.event.inputs.b}}))
           echo "Sum of two number is =$SUM"
       
         
